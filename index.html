@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Follow the rally journey of ASLAM GARAGE MOTORS TEAM — rally adventures, videos, car updates and milestones.">
+<title>ASLAM GARAGE MOTORS TEAM | My Rally Journey</title>
+<style>
+:root{--blue:#0878d1;--yellow:#ffd447;--ink:#0a1119;--panel:#111c28;--muted:#aab7c5;--white:#f7f9fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#080e15ee;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff18}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}.brand{font-weight:900;letter-spacing:.04em;line-height:1.2}.brand span{color:var(--yellow)}nav{display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem;color:#d8e1ea}nav a:hover{color:var(--yellow)}
+.hero{min-height:580px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,#07101af2 0%,#07101acb 48%,#07101a40 100%),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:6px;background:linear-gradient(90deg,var(--blue) 0 65%,var(--yellow) 65%)}
+.hero-content{position:relative;z-index:1;padding:80px 0;max-width:720px}.eyebrow{color:var(--yellow);font-weight:800;letter-spacing:.17em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:.98;margin:18px 0;letter-spacing:-.055em}h1 span{color:var(--yellow)}.lead{font-size:1.12rem;color:#d1dce7;max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border:1px solid #ffffff40;padding:12px 18px;border-radius:5px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}.primary{background:var(--yellow);color:#101720;border-color:var(--yellow)}.secondary{background:#ffffff0b}.btn:hover{transform:translateY(-1px)}
+section{padding:76px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}.kicker{color:var(--yellow);font-size:.76rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase}h2{font-size:clamp(2rem,4vw,3rem);line-height:1.05;margin:8px 0 0;letter-spacing:-.04em}.sub{color:var(--muted);max-width:580px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid #ffffff12;border-radius:9px;overflow:hidden}.card-body{padding:20px}.card h3{margin:5px 0 8px}.card p{color:var(--muted);margin:0}.card-art{height:180px;background:linear-gradient(135deg,#173c5a,#0b1520);display:flex;align-items:center;justify-content:center;font-size:3rem}.tag{display:inline-block;color:var(--yellow);font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em}
+.timeline{border-left:2px solid #2d5b80;margin-left:10px;padding-left:28px;display:grid;gap:24px}.event{position:relative;background:var(--panel);padding:20px;border-radius:8px;border:1px solid #ffffff12}.event:before{content:"";position:absolute;left:-36px;top:25px;width:12px;height:12px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 5px #ffd44722}.event small{color:var(--yellow);font-weight:800;letter-spacing:.1em;text-transform:uppercase}.event h3{margin:5px 0}.event p{margin:0;color:var(--muted)}
+.video-tools{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:24px}.tool{background:var(--panel);padding:22px;border:1px solid #ffffff16;border-radius:9px}.tool label{display:block;font-weight:800;margin:12px 0 6px}.tool input,.tool textarea{width:100%;padding:12px;background:#07101a;border:1px solid #ffffff2b;border-radius:5px;color:white;font:inherit}.tool input[type=file]{padding:9px}.tool .btn{margin-top:12px}.note{font-size:.84rem;color:var(--muted)}.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.video-card{background:var(--panel);border:1px solid #ffffff18;border-radius:8px;overflow:hidden}.video-frame{aspect-ratio:16/9;background:#03070b;display:flex;align-items:center;justify-content:center;color:var(--muted)}.video-frame iframe,.video-frame video{width:100%;height:100%;border:0}.video-info{padding:14px 16px}.video-info p{color:var(--muted);margin:4px 0 0;font-size:.9rem}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.spec{background:var(--panel);padding:18px;border-radius:8px;border:1px solid #ffffff12}.spec strong{display:block;color:var(--yellow);font-size:1.4rem}.spec span{color:var(--muted);font-size:.84rem}
+.contact{background:linear-gradient(135deg,#0d2840,#0a1119);border-top:1px solid #ffffff15;border-bottom:1px solid #ffffff15}.contact-row{display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}
+footer{padding:25px 0;color:var(--muted);font-size:.85rem}.footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.empty{border:1px dashed #ffffff35;border-radius:8px;padding:28px;color:var(--muted);text-align:center;grid-column:1/-1}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{min-height:520px}.grid,.video-tools,.video-grid{grid-template-columns:1fr}.specs{grid-template-columns:repeat(2,1fr)}section{padding:54px 0}.section-head{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home">ASLAM GARAGE<br><span>MOTORS TEAM</span></a>
+  <nav aria-label="Main navigation"><a href="#journey">Journey</a><a href="#adventures">Adventures</a><a href="#videos">Videos</a><a href="#car">The Car</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-content">
+  <div class="eyebrow">Motorsport • Rwanda / East Africa</div>
+  <h1>MY RALLY<br><span>JOURNEY.</span></h1>
+  <p class="lead">Every stage has a story. Follow the progress, the preparation, the people, and the moments that make the adventure.</p>
+  <div class="actions"><a class="btn primary" href="#videos">▶ Watch the videos</a><a class="btn secondary" href="#journey">Explore the journey ↓</a></div>
+</div></section>
+
+<section id="journey"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">The story so far</div><h2>Built one stage at a time.</h2></div><p class="sub">A living timeline of your rally life. Replace these starter entries with your real dates, events and milestones as they happen.</p></div>
+  <div class="timeline" id="timeline">
+    <article class="event"><small>Milestone 01 · Getting started</small><h3>The rally dream begins</h3><p>Share how your interest in rallying started and what inspired you to take the first step.</p></article>
+    <article class="event"><small>Milestone 02 · Preparation</small><h3>Learning, planning and preparing</h3><p>Add updates about training, car preparation, the team, and what you are learning.</p></article>
+    <article class="event"><small>Next chapter</small><h3>The next stage awaits</h3><p>Use this space for your next rally, first event, or a goal you are working toward.</p></article>
+  </div>
+</div></section>
+
+<section id="adventures" style="background:#0d151f"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">On and off the stage</div><h2>Rally adventures.</h2></div><p class="sub">Event recaps, behind-the-scenes photos, service-park updates and results.</p></div>
+  <div class="grid">
+    <article class="card"><div class="card-art">🏁</div><div class="card-body"><span class="tag">Event recap</span><h3>Race day stories</h3><p>Share what happened, what went well, and what you learned from each event.</p></div></article>
+    <article class="card"><div class="card-art">🔧</div><div class="card-body"><span class="tag">Behind the scenes</span><h3>Preparation & teamwork</h3><p>Show the work before the start line: checks, repairs, planning and teamwork.</p></div></article>
+    <article class="card"><div class="card-art">📸</div><div class="card-body"><span class="tag">Photo diary</span><h3>Moments worth keeping</h3><p>Collect your favourite photos and memories from the rally journey.</p></div></article>
+  </div>
+</div></section>
+
+<section id="videos"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">Watch the action</div><h2>Videos & highlights.</h2></div><p class="sub">Add a YouTube link or preview a video file from your device. Uploaded files in this starter demo stay in your browser and are not published online.</p></div>
+  <div class="video-tools">
+    <form class="tool" id="youtubeForm"><span class="tag">Option 01 · YouTube</span><h3>Add a YouTube video</h3><label for="ytTitle">Video title</label><input id="ytTitle" required placeholder="e.g. Rally test day highlights"><label for="ytUrl">YouTube URL</label><input id="ytUrl" required type="url" placeholder="https://www.youtube.com/watch?v=..."><label for="ytDesc">Short description (optional)</label><textarea id="ytDesc" rows="2" placeholder="Where was it filmed?"></textarea><button class="btn primary" type="submit">Add video</button><p class="note">You can add standard YouTube watch links, youtu.be links, or Shorts links.</p></form>
+    <form class="tool" id="uploadForm"><span class="tag">Option 02 · Direct upload</span><h3>Preview a video file</h3><label for="localTitle">Video title</label><input id="localTitle" required placeholder="e.g. Onboard footage"><label for="localVideo">Choose a video file</label><input id="localVideo" type="file" accept="video/*" required><button class="btn primary" type="submit">Preview uploaded video</button><p class="note">Demo limitation: this previews the file locally. To make uploads visible to every visitor, the live website needs a backend and video-storage service.</p></form>
+  </div>
+  <div class="video-grid" id="videoGrid"><div class="empty" id="emptyVideos">Your video gallery is ready. Add your first YouTube link or preview a video from your device.</div></div>
+</div></section>
+
+<section id="car" style="background:#0d151f"><div class="wrap">
+  <div class="section-head"><div><div class="kicker">The machine & the team</div><h2>Meet the rally car.</h2></div><p class="sub">A home for the car's story, technical updates, crew and partners.</p></div>
+  <div class="card"><div class="card-art" style="height:220px;font-size:4rem">🚗</div><div class="card-body"><span class="tag">Car profile · Update details as confirmed</span><h3>Subaru Impreza “Bug-Eye”</h3><p>ASLAM GARAGE MOTORS TEAM · Rally number #68 · Burundi 🇧🇮</p></div></div>
+  <div class="specs" style="margin-top:16px"><div class="spec"><strong>#68</strong><span>Rally number</span></div><div class="spec"><strong>Subaru</strong><span>Car focus</span></div><div class="spec"><strong>Team</strong><span>ASLAM GARAGE</span></div><div class="spec"><strong>Partners</strong><span>Sponsor section to come</span></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap contact-row"><div><div class="kicker">Follow the journey</div><h2>More miles. More stories.</h2><p class="sub">Add your YouTube channel, social links and team contact details here.</p></div><a class="btn primary" href="#videos">Watch highlights ↗</a></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> ASLAM GARAGE MOTORS TEAM</span><span>Made for the love of rally.</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const grid = document.getElementById('videoGrid');
+function emptyState(){ if(!grid.querySelector('.video-card')) grid.innerHTML='<div class="empty" id="emptyVideos">Your video gallery is ready. Add your first YouTube link or preview a video from your device.</div>'; }
+function addCard(title,desc,frame){const empty=grid.querySelector('.empty');if(empty)empty.remove();const card=document.createElement('article');card.className='video-card';const holder=document.createElement('div');holder.className='video-frame';holder.appendChild(frame);const info=document.createElement('div');info.className='video-info';const h=document.createElement('strong');h.textContent=title;const p=document.createElement('p');p.textContent=desc||'';info.append(h,p);card.append(holder,info);grid.prepend(card);}
+function youtubeId(raw){try{const u=new URL(raw);if(u.hostname.includes('youtu.be'))return u.pathname.slice(1).split('/')[0];if(u.hostname.includes('youtube.com')){if(u.pathname==='/watch')return u.searchParams.get('v');const parts=u.pathname.split('/');if(['embed','shorts','live'].includes(parts[1]))return parts[2];}}catch(e){}return null;}
+document.getElementById('youtubeForm').addEventListener('submit',e=>{e.preventDefault();const title=document.getElementById('ytTitle').value.trim();const url=document.getElementById('ytUrl').value.trim();const id=youtubeId(url);if(!id){alert('Please enter a valid YouTube video URL.');return;}const frame=document.createElement('iframe');frame.src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(id);frame.title=title;frame.loading='lazy';frame.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';frame.allowFullscreen=true;addCard(title,document.getElementById('ytDesc').value.trim(),frame);e.target.reset();});
+document.getElementById('uploadForm').addEventListener('submit',e=>{e.preventDefault();const file=document.getElementById('localVideo').files[0];if(!file)return;if(!file.type.startsWith('video/')){alert('Choose a video file.');return;}const url=URL.createObjectURL(file);const video=document.createElement('video');video.src=url;video.controls=true;video.preload='metadata';addCard(document.getElementById('localTitle').value.trim(),file.name+' · Local preview only',video);e.target.reset();});
+</script>
+</body></html>
